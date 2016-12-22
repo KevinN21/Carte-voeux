@@ -1,0 +1,184 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+body{
+background-color:#88CFEE;
+width: 100%;
+height: 80vh;
+overflow-y:hidden;
+overflow-x:hidden;
+}
+#snow{
+	background: none;
+	font-family: "Androgyne";
+	background-image:
+  url('http://www.wearewebstars.dk/codepen/img/s1.png'),
+  url('http://www.wearewebstars.dk/codepen/img//s2.png'),
+  url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+header {height:30vh;}
+header svg{margin-top:-40%;transform: scale(0.4, 0.2);}
+.st0{fill:#36A9E1;}
+.st1{fill:#F8AC14;}
+.st2{fill:#E83E49;}
+.st3{fill:#382C23;}
+.st4{fill:#E30613;
+  animation-name: redball;
+  animation-duration: 1s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+  @keyframes redball {
+  0% {fill:#E30613;}
+  25% {fill:#3AAA35;}
+  50% {fill:#E30613;}
+  75% {fill:#3AAA35;}
+  } /* red */
+.st5{fill:#CF7913;}
+.st6{fill:#A3195B;}
+.st7{fill:#3AAA35;
+  animation-name: greenball;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;}
+@keyframes greenball {
+  0% {fill:#3AAA35;}
+  25% {fill:#E30613;}
+  50% {fill:#3AAA35;}
+  100% {fill:#E30613;}
+} /* green */
+.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#E30613;}
+.st9{fill-rule:evenodd;clip-rule:evenodd;fill:#3AAA35;}
+.st10{fill:#008D36;}
+.st11{fill:#432918;}
+.st12{fill:#C9973C;}
+.st13{fill-rule:evenodd;clip-rule:evenodd;fill:#C9973C;}
+.st14{fill:#CB9A3E;}
+.st15{fill:#951B81;}
+.st16{fill:#E3E2E2;}
+.st17{fill-rule:evenodd;clip-rule:evenodd;}
+.st18{fill:#1D71B8;}
+.st19{fill:#D31C17;}
+.st20{fill:#008738;}
+.st21{fill:none;}
+.st22{fill-rule:evenodd;clip-rule:evenodd;fill:#E83E49;}
+.st23{fill-rule:evenodd;clip-rule:evenodd;fill:#CB9A3E;}
+.st24{fill:#936037;}
+.st25{fill:#B17F4A;}
+.st26{fill:#FFFFFF;}
+.st27{fill:#E7323B;}
+.st28{fill:#BDBABA;}
+.st29{fill:#13110C;}
+/* Winter Wonderland fin */
+main section svg{
+    margin-left:120%;
+    margin-top:0;
+    transform: scale(2);
+    position: relative;
+    -webkit-animation-name: santaGifts; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    animation-name: santaGifts;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+@keyframes santaGifts {
+    0%   {right:0%;}
+    100% {right:200%;}
+}
+
+
+.smoke{
+  z-index: 1;
+  -webkit-animation-name: smoke; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+  animation-name: smoke;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes smoke {
+
+0% {fill:#fff;transform: rotate(0deg);opacity: 0;}
+25% {opacity: 0.25;}
+50% {opacity: 0.5;}
+75% {opacity: 0.25;}
+100% {fill:#fff;transform: rotate(-10deg); opacity:0;}
+}
+.windows{  z-index: 1;
+  -webkit-animation-name: lightup; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+  animation-name: lightup;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+animation-delay: 10s;}
+  @keyframes lightup {
+    0% {fill:#eacb32;}
+  100% {fill:#013440;}
+  }
+.snowfloor{margin-top: 15%;background:#fff;color:#ffffff;width:100%;height:17vh;position: relative;}
+#redhousesmoke{transform: scale(2);position: absolute;bottom:100%;left:14%;}
+#xmastree{transform: scale(1.5);position:absolute;bottom:80%;right:45%;}
+
+.star{  z-index: 1;
+  -webkit-animation-name: star; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+  animation-name: star;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;}
+@keyframes star {
+  0%   {fill:#FFFF00;}
+  100% {fill:#fff;}
+}
+.elf {
+  position: absolute;
+  bottom:20%;
+  left:12%;
+  transform: scale(0.7);
+  -webkit-animation-name: elf; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: elf;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+
+}
+@keyframes elf {
+  0% {left:12%;}
+  100% {left:100%;}
+}
+footer {z-index: -1;color:#000;list-style: none;position: absolute;right:10px;bottom: 40px;}
