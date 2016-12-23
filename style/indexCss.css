@@ -1,10 +1,11 @@
-*{margin:0;padding:0;box-sizing: border-box;}
+*{margin:0;padding:0;box-sizing:border-box;}
 body{
-background-color:#88CFEE;
+background-color:#003366;
 width: 100%;
-height: 80vh;
-overflow-y:hidden;
+height: 90vh;
+overflow-y:auto;
 overflow-x:hidden;
+font-family: "verdana";
 }
 #snow{
 	background: none;
@@ -13,12 +14,11 @@ overflow-x:hidden;
   url('http://www.wearewebstars.dk/codepen/img/s1.png'),
   url('http://www.wearewebstars.dk/codepen/img//s2.png'),
   url('http://www.wearewebstars.dk/codepen/img//s3.png');
-	height: 100%;
+	height: 120vh;
 	left: 0;
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index:1;
 	-webkit-animation: snow 10s linear infinite;
 	-moz-animation: snow 10s linear infinite;
 	-ms-animation: snow 10s linear infinite;
@@ -118,7 +118,6 @@ main section svg{
 
 
 .smoke{
-  z-index: 1;
   -webkit-animation-name: smoke; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
@@ -134,7 +133,7 @@ main section svg{
 75% {opacity: 0.25;}
 100% {fill:#fff;transform: rotate(-10deg); opacity:0;}
 }
-.windows{  z-index: 1;
+.windows{
   -webkit-animation-name: lightup; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
@@ -151,7 +150,7 @@ animation-delay: 10s;}
 #redhousesmoke{transform: scale(2);position: absolute;bottom:100%;left:14%;}
 #xmastree{transform: scale(1.5);position:absolute;bottom:80%;right:45%;}
 
-.star{  z-index: 1;
+.star{
   -webkit-animation-name: star; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
@@ -181,4 +180,31 @@ animation-delay: 10s;}
   0% {left:12%;}
   100% {left:100%;}
 }
-footer {z-index: -1;color:#000;list-style: none;position: absolute;right:10px;bottom: 40px;}
+a,a:hover,a:active,a:visited{color:white;}
+footer{
+padding-bottom:3%;text-align: center;background-color:#333;color:#000;list-style: none;}
+footer form {height:15vh;width: 100%;}
+footer form p{margin-top: 1.5%;border-bottom:2px solid white; width: 300px; color:#fff;margin-left:1%;float:left;}
+footer nav ul li{text-align: center; display: inline-block;}
+input{z-index: 1;position:relative;
+	margin-left: 1%;
+	margin-top: 1%;
+	width: 60%;
+  background-color: #3CBC8D;
+  color: white;
+	padding:16px;
+	border: none;
+	outline: none;
+	font-size: bolder;
+}
+
+
+button{z-index: 1;position:relative;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
